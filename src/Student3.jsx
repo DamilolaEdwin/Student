@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types'
 
-function Student2(props){
+
+function Student3(props){
     return(
-        <div className="student2">
+        <div className="student">
             <p>Name: {props.name}</p>
             <p>Age: {props.age}</p>
-            <p className="stu">Student: {props.isStudent ? "Yes" : "No"}</p>
+            <p>Student: {props.isStudent ? "Yes" : "No"}</p>
         </div>
-    )
-
+    );
 }
-Student2.propTypes = {
+Student3.propTypes = {
     name: PropTypes.string,
     age: PropTypes.number,
     isStudent: PropTypes.bool
 }
-export default Student2
+export default Student3
